@@ -1,0 +1,32 @@
+- Inicio de clase: 20:40
+- Nombra lista: 20:45
+NOTA: Se debe de tener todos los ejercicios de clase para presentar la evaluación del parcial
+
+¿Que vamos a ver?
+1er Parcial  - Bootstrap5
+2ndo Parcial - Python (OOP) + Flask
+3er Parcial  - MySQL + (VueJS)
+
+Proyecto: Una aplicación web con Bootstrap5 + Python(Flask) + MySQL + VueJS (Tentativamente) para un negocio.
+Entregas Parciales: Proyecto funcionando en local más código en github.
+
+Fechas de entrega:
+- Parcial 1: Jueves 4 de Febrero de 2021
+            - Frontend usando Bootstrap5
+- Parcial 2: Jueves 4 de Marzo de 2021
+            - Backend usando Python(Flask) + MYSQL
+- Parcial 3: Jueves 15 de Abril de 2021
+            - Aplicación completa funcionando (Frontend + Backend) API-REST
+
+Modo de trabajo:
+- Usaremos github para llevar el Proyecto
+- Usaremos github para los ejercicios de clase
+
+- Equipo: Regina - Pablo
+- Individual: Ortega - Asaf - Carlos - Manuel - Daniel - Flores - Jafet
+
+Evaluación:
+1er Parcial:  30%
+2ndo Parcial: 30%
+3er Parcial:  40%
+Total:       100%
