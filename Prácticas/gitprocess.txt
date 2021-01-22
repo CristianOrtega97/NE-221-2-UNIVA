@@ -1,0 +1,12 @@
+git clone webpath.html
+
+1.-  git status   -> Dice la branch, cambios pendientes y completados
+2.-  git add nombrearchivo.txt/ .
+3.-  git commit -m 'COMENTARIO'
+4.-  git push origin nombredominio
+5.-  git checkout -b  nombredominio ->  Crea un brach y se cambia a esa
+6.-  git branch nombredominio -> Crea o te cambia de dominio
+7.-  git branch
+8.-  git pull ->  Trae todo lo mas reciente
+9.-  git merge -> Une las branches
+10.- git  help
