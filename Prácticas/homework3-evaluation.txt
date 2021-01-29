@@ -1,0 +1,4 @@
+1.- Todos los wireframes / mockups (al menos 4)
+
+2.- Entregar las pantallas del FE con bootstrap.v.5 (si es en Equipo
+al menos 4 por team member)

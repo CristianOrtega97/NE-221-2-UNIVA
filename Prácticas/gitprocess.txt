@@ -10,3 +10,4 @@ git clone webpath.html
 8.-  git pull ->  Trae todo lo mas reciente
 9.-  git merge -> Une las branches
 10.- git  help
+11.- git branch -a   -> Muestra todas las branch (locales y globales).
