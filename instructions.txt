@@ -1,0 +1,16 @@
+// activar flask
+cd venv/Scripts
+activate.bat
+
+// instalar flask
+pip install flask
+
+// desinstalar flask
+pip uninstall flask
+
+// desinstalar flask y volverlo a instalar
+pip uninstall flask && pip install flask
+
+NOTA: Si deja de funcionar flask, se tiene que volver a instalar
+      dentro del virtual env
+

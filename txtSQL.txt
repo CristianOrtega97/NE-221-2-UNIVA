@@ -1,0 +1,22 @@
+CREATE TABLE `school`.`school` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(45) NOT NULL , `description` VARCHAR(45) NOT NULL , `is_active` BOOLEAN NOT NULL DEFAULT TRUE , `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `update_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `teacher_id` INT NOT NULL , `student_id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE TABLE `school`.`teacher` ( `id` INT NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(45) NOT NULL , `last_name` VARCHAR(45) NOT NULL , `is_active` BOOLEAN NOT NULL DEFAULT TRUE , `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `update_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE TABLE `school`.`student` ( `id` INT NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(45) NOT NULL , `last_name` VARCHAR(45) NOT NULL , `is_active` BOOLEAN NOT NULL DEFAULT TRUE , `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `update_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE VIEW school_view AS
+SELECT 
+	school.id AS 'id',
+    name AS 'name',
+    description AS 'description',
+    school.is_active AS 'is_active',
+    school.create_at AS 'create_at',
+    school.update_at AS 'update_at',
+    teacher_id AS 'teacher_id',
+    teacher.first_name = 'teacher_first_name',
+    student.id = 'student_id',
+    student.first_name = 'student_first_name'
+FROM school
+INNER JOIN teacher ON teacher.id = school.teacher_id
+INNER JOIN student ON student.id = school.student_id
+
